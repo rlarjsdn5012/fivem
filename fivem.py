@@ -20,5 +20,6 @@ async def on_message(message):
     if message.content.startswith("!총판호출"):
         await message.channel.send("<@581396513108918295> <@677439965554147349> 야 개새끼야 손님왔어 | 연락없을경우 기다려주세요 .")
 
-
-client.run("Njk0ODY5ODAwMzM3Mjc2OTgx.XoR-og.J1yJQb_5lhsoSWZdRNqtsnvoTss")
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
